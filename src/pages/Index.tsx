@@ -422,6 +422,137 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Affiliations Section */}
+      <section className="container mx-auto px-4 pb-16">
+        <div className="text-center mb-12 space-y-4">
+          <h2 className="text-3xl lg:text-4xl font-bold">
+            Trusted by <span className="text-music-orange">100+</span> Global Music 
+            <br />
+            <span className="text-music-purple">Institutions</span> & Partners
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            Leading music schools, conservatories, and educational partners collaborate with us 
+            to deliver world-class music education and expand learning opportunities globally.
+          </p>
+        </div>
+
+        <div className="max-w-6xl mx-auto">
+          {/* First Row */}
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-8 items-center">
+            <div className="flex items-center justify-center h-20 bg-gradient-to-br from-music-purple/10 to-music-purple/5 rounded-2xl border border-music-purple/20 hover:border-music-purple/40 transition-all duration-300 group">
+              <div className="text-center">
+                <div className="w-8 h-8 bg-music-purple rounded-lg mx-auto mb-1 flex items-center justify-center">
+                  <Music className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-sm font-semibold text-music-purple">Berklee</span>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center h-20 bg-gradient-to-br from-music-orange/10 to-music-orange/5 rounded-2xl border border-music-orange/20 hover:border-music-orange/40 transition-all duration-300 group">
+              <div className="text-center">
+                <div className="w-8 h-8 bg-music-orange rounded-lg mx-auto mb-1 flex items-center justify-center">
+                  <Piano className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-sm font-semibold text-music-orange">Juilliard</span>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center h-20 bg-gradient-to-br from-music-pink/10 to-music-pink/5 rounded-2xl border border-music-pink/20 hover:border-music-pink/40 transition-all duration-300 group">
+              <div className="text-center">
+                <div className="w-8 h-8 bg-music-pink rounded-lg mx-auto mb-1 flex items-center justify-center">
+                  <Guitar className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-sm font-semibold text-music-pink">RNCM</span>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center h-20 bg-gradient-to-br from-music-yellow/10 to-music-yellow/5 rounded-2xl border border-music-yellow/20 hover:border-music-yellow/40 transition-all duration-300 group">
+              <div className="text-center">
+                <div className="w-8 h-8 bg-music-yellow rounded-lg mx-auto mb-1 flex items-center justify-center">
+                  <Drum className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-sm font-semibold text-music-yellow">Curtis</span>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center h-20 bg-gradient-to-br from-music-red/10 to-music-red/5 rounded-2xl border border-music-red/20 hover:border-music-red/40 transition-all duration-300 group">
+              <div className="text-center">
+                <div className="w-8 h-8 bg-music-red rounded-lg mx-auto mb-1 flex items-center justify-center">
+                  <Mic className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-sm font-semibold text-music-red">Eastman</span>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center h-20 bg-gradient-to-br from-music-purple/10 to-music-purple/5 rounded-2xl border border-music-purple/20 hover:border-music-purple/40 transition-all duration-300 group">
+              <div className="text-center">
+                <div className="w-8 h-8 bg-music-purple rounded-lg mx-auto mb-1 flex items-center justify-center">
+                  <Keyboard className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-sm font-semibold text-music-purple">Oberlin</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Second Row */}
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
+            <div className="flex items-center justify-center h-20 bg-gradient-to-br from-music-orange/10 to-music-orange/5 rounded-2xl border border-music-orange/20 hover:border-music-orange/40 transition-all duration-300 group">
+              <div className="text-center">
+                <div className="w-8 h-8 bg-music-orange rounded-lg mx-auto mb-1 flex items-center justify-center">
+                  <Music4 className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-sm font-semibold text-music-orange">BIMM</span>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center h-20 bg-gradient-to-br from-music-pink/10 to-music-pink/5 rounded-2xl border border-music-pink/20 hover:border-music-pink/40 transition-all duration-300 group">
+              <div className="text-center">
+                <div className="w-8 h-8 bg-music-pink rounded-lg mx-auto mb-1 flex items-center justify-center">
+                  <Guitar className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-sm font-semibold text-music-pink">MI</span>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center h-20 bg-gradient-to-br from-music-yellow/10 to-music-yellow/5 rounded-2xl border border-music-yellow/20 hover:border-music-yellow/40 transition-all duration-300 group">
+              <div className="text-center">
+                <div className="w-8 h-8 bg-music-yellow rounded-lg mx-auto mb-1 flex items-center justify-center">
+                  <Piano className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-sm font-semibold text-music-yellow">ABRSM</span>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center h-20 bg-gradient-to-br from-music-red/10 to-music-red/5 rounded-2xl border border-music-red/20 hover:border-music-red/40 transition-all duration-300 group">
+              <div className="text-center">
+                <div className="w-8 h-8 bg-music-red rounded-lg mx-auto mb-1 flex items-center justify-center">
+                  <Drum className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-sm font-semibold text-music-red">Trinity</span>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center h-20 bg-gradient-to-br from-music-purple/10 to-music-purple/5 rounded-2xl border border-music-purple/20 hover:border-music-purple/40 transition-all duration-300 group">
+              <div className="text-center">
+                <div className="w-8 h-8 bg-music-purple rounded-lg mx-auto mb-1 flex items-center justify-center">
+                  <Mic className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-sm font-semibold text-music-purple">RCM</span>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center h-20 bg-gradient-to-br from-music-orange/10 to-music-orange/5 rounded-2xl border border-music-orange/20 hover:border-music-orange/40 transition-all duration-300 group">
+              <div className="text-center">
+                <div className="w-8 h-8 bg-music-orange rounded-lg mx-auto mb-1 flex items-center justify-center">
+                  <Music className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-sm font-semibold text-music-orange">Yamaha</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
