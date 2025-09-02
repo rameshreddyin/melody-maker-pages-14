@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { 
   Play, 
   Users, 
@@ -13,7 +14,15 @@ import {
   Drum,
   Keyboard,
   Mic,
-  Music4
+  Music4,
+  Smile,
+  CreditCard,
+  BarChart3,
+  Settings,
+  Calendar,
+  UserPlus,
+  PlayCircle,
+  HeadphonesIcon
 } from "lucide-react";
 import heroImage from "@/assets/music-hero.jpg";
 
@@ -550,6 +559,174 @@ const Index = () => {
                 <span className="text-sm font-semibold text-music-orange">Yamaha</span>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="container mx-auto px-4 pb-16">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12 space-y-4">
+            <h2 className="text-4xl lg:text-5xl font-bold">
+              Frequently Asked <span className="text-music-orange">Questions</span>
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              These are the most commonly asked questions about MuSoclef Music Education.
+              Can't find what you're looking for? <span className="text-music-purple underline cursor-pointer hover:text-music-pink transition-colors">Chat to our friendly team!</span>
+            </p>
+          </div>
+
+          {/* Category Filter Buttons */}
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            <Button 
+              variant="default" 
+              className="bg-foreground text-background hover:bg-foreground/90 rounded-full px-6"
+            >
+              General
+            </Button>
+            <Button 
+              variant="outline" 
+              className="border-border text-foreground hover:bg-muted rounded-full px-6"
+            >
+              Pricing
+            </Button>
+            <Button 
+              variant="outline" 
+              className="border-border text-foreground hover:bg-muted rounded-full px-6"
+            >
+              Courses
+            </Button>
+            <Button 
+              variant="outline" 
+              className="border-border text-foreground hover:bg-muted rounded-full px-6"
+            >
+              Support
+            </Button>
+          </div>
+
+          {/* FAQ Accordion */}
+          <div className="space-y-4">
+            <Accordion type="single" collapsible defaultValue="item-1">
+              <AccordionItem value="item-1" className="border border-border rounded-2xl px-6 mb-4">
+                <AccordionTrigger className="hover:no-underline py-6">
+                  <div className="flex items-center gap-4 text-left">
+                    <div className="w-12 h-12 bg-gradient-to-br from-music-purple/10 to-music-purple/5 rounded-xl border border-music-purple/20 flex items-center justify-center flex-shrink-0">
+                      <Smile className="w-5 h-5 text-music-purple" />
+                    </div>
+                    <span className="text-lg font-semibold">Is there a free trial available?</span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="pt-0 pb-6 ml-16">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Yes, you can try our platform for free for 7 days. We'll provide you with access to 3 introductory courses 
+                    and a free 30-minute consultation with one of our music instructors to help you get started. 
+                    <span className="text-music-purple underline cursor-pointer hover:text-music-pink transition-colors">Book a session here.</span>
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-2" className="border border-border rounded-2xl px-6 mb-4">
+                <AccordionTrigger className="hover:no-underline py-6">
+                  <div className="flex items-center gap-4 text-left">
+                    <div className="w-12 h-12 bg-gradient-to-br from-music-orange/10 to-music-orange/5 rounded-xl border border-music-orange/20 flex items-center justify-center flex-shrink-0">
+                      <CreditCard className="w-5 h-5 text-music-orange" />
+                    </div>
+                    <span className="text-lg font-semibold">Can I change my plan later?</span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="pt-0 pb-6 ml-16">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Absolutely! You can upgrade or downgrade your plan at any time. Changes will take effect at the beginning 
+                    of your next billing cycle, and we'll prorate any differences in pricing.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-3" className="border border-border rounded-2xl px-6 mb-4">
+                <AccordionTrigger className="hover:no-underline py-6">
+                  <div className="flex items-center gap-4 text-left">
+                    <div className="w-12 h-12 bg-gradient-to-br from-music-pink/10 to-music-pink/5 rounded-xl border border-music-pink/20 flex items-center justify-center flex-shrink-0">
+                      <BarChart3 className="w-5 h-5 text-music-pink" />
+                    </div>
+                    <span className="text-lg font-semibold">What is your cancellation policy?</span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="pt-0 pb-6 ml-16">
+                  <p className="text-muted-foreground leading-relaxed">
+                    You can cancel your subscription at any time. Your access will continue until the end of your current billing period, 
+                    and you won't be charged for the following month. All your progress and certificates remain accessible.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-4" className="border border-border rounded-2xl px-6 mb-4">
+                <AccordionTrigger className="hover:no-underline py-6">
+                  <div className="flex items-center gap-4 text-left">
+                    <div className="w-12 h-12 bg-gradient-to-br from-music-yellow/10 to-music-yellow/5 rounded-xl border border-music-yellow/20 flex items-center justify-center flex-shrink-0">
+                      <UserPlus className="w-5 h-5 text-music-yellow" />
+                    </div>
+                    <span className="text-lg font-semibold">Can I add multiple students to my account?</span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="pt-0 pb-6 ml-16">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Yes! Our Family Plan allows up to 4 students per account with individual progress tracking. 
+                    Each student gets their own dashboard and can learn at their own pace across different instruments.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-5" className="border border-border rounded-2xl px-6 mb-4">
+                <AccordionTrigger className="hover:no-underline py-6">
+                  <div className="flex items-center gap-4 text-left">
+                    <div className="w-12 h-12 bg-gradient-to-br from-music-purple/10 to-music-purple/5 rounded-xl border border-music-purple/20 flex items-center justify-center flex-shrink-0">
+                      <Calendar className="w-5 h-5 text-music-purple" />
+                    </div>
+                    <span className="text-lg font-semibold">How does scheduling work?</span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="pt-0 pb-6 ml-16">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Our platform offers both self-paced learning and scheduled live sessions. You can book one-on-one lessons 
+                    with certified instructors based on your availability, or join group sessions that run throughout the week.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-6" className="border border-border rounded-2xl px-6 mb-4">
+                <AccordionTrigger className="hover:no-underline py-6">
+                  <div className="flex items-center gap-4 text-left">
+                    <div className="w-12 h-12 bg-gradient-to-br from-music-orange/10 to-music-orange/5 rounded-xl border border-music-orange/20 flex items-center justify-center flex-shrink-0">
+                      <Settings className="w-5 h-5 text-music-orange" />
+                    </div>
+                    <span className="text-lg font-semibold">How does support work?</span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="pt-0 pb-6 ml-16">
+                  <p className="text-muted-foreground leading-relaxed">
+                    We offer 24/7 technical support via chat and email, plus dedicated music instruction support during business hours. 
+                    Our community forum is also available for peer-to-peer learning and discussion.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-7" className="border border-border rounded-2xl px-6 mb-4">
+                <AccordionTrigger className="hover:no-underline py-6">
+                  <div className="flex items-center gap-4 text-left">
+                    <div className="w-12 h-12 bg-gradient-to-br from-music-pink/10 to-music-pink/5 rounded-xl border border-music-pink/20 flex items-center justify-center flex-shrink-0">
+                      <PlayCircle className="w-5 h-5 text-music-pink" />
+                    </div>
+                    <span className="text-lg font-semibold">Do you provide video tutorials?</span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="pt-0 pb-6 ml-16">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Yes! Every course includes high-quality HD video lessons, interactive exercises, sheet music, and backing tracks. 
+                    You also get access to our mobile app for learning on the go with offline content downloads.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>
