@@ -730,6 +730,72 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Final CTA Banner */}
+      <section className="container mx-auto px-4 pb-24">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="bg-gradient-to-br from-music-purple/5 via-music-pink/5 to-music-orange/5 rounded-3xl p-12 lg:p-16 shadow-glow animate-fade-in">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm rounded-full px-6 py-3 mb-8 shadow-card">
+              <Music className="w-5 h-5 text-music-orange" />
+              <span className="text-sm font-medium text-muted-foreground">Transform Your Musical Journey</span>
+            </div>
+
+            {/* Main Heading */}
+            <div className="space-y-6 mb-8">
+              <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
+                Want to know more
+                <br />
+                about <span className="text-music-orange">MuSoclef</span>?
+              </h2>
+              
+              <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+                Book a free demo and learn more about our music courses, 
+                expert instructors, and personalized learning paths. We would love to 
+                help you start your musical adventure.
+              </p>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="group px-8 py-4 text-lg font-semibold hover-scale"
+              >
+                <Calendar className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                Book a Demo
+              </Button>
+              
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-music-purple text-music-purple hover:bg-music-purple hover:text-white px-8 py-4 text-lg font-semibold hover-scale"
+              >
+                Start Free Trial
+              </Button>
+            </div>
+
+            {/* Additional Info */}
+            <div className="mt-8 pt-8 border-t border-border/50">
+              <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-muted-foreground">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-music-green rounded-full"></div>
+                  <span>No credit card required</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-music-yellow rounded-full"></div>
+                  <span>7-day free trial</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-music-pink rounded-full"></div>
+                  <span>Cancel anytime</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

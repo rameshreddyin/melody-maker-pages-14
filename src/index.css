@@ -43,6 +43,7 @@ All colors MUST be HSL.
     --music-purple: 280 100% 70%;
     --music-red: 0 85% 55%;
     --music-yellow: 45 100% 60%;
+    --music-green: 120 100% 40%;
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--music-purple)), hsl(var(--music-pink)));
